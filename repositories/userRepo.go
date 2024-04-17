@@ -6,7 +6,7 @@ import (
 
 func GetUserRepo(conn *gorm.DB, data interface{}) (interface{}, error) {
 	query := conn
-	if err := query.Where("status = ?", true).Find(&data).Error; err != nil {
+	if err := query.Table("users").Where("status = ?", true).Find(&data).Error; err != nil {
 		return "", err
 	}
 	return data, nil
