@@ -12,7 +12,7 @@ func Test_get_user(t *testing.T) {
 	// baht := 0.0
 	var conn *gorm.DB
 	var data interface{}
-	actual := GetUser(conn, data)
+	actual, _ := GetUser(conn, data)
 
 	assert.Equal(t, expected, actual)
 }
