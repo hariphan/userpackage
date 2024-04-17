@@ -2,9 +2,6 @@ module github.com/hariphan/userpackage
 
 go 1.21.1
 
-replace github.com/hariphan/user_package => github.com/hariphan/userpackage
-
-
 require (
 	github.com/go-sql-driver/mysql v1.8.1
 	github.com/stretchr/testify v1.9.0
